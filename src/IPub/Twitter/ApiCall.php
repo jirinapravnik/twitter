@@ -222,9 +222,9 @@ abstract class ApiCall extends Nette\Object
 			throw $ex;
 		}
 
-		if ($response->isPaginated()) {
-			return new Paginator($this, $response);
-		}
+//		if ($response->isPaginated()) {
+//			return new Paginator($this, $response);
+//		}
 
 		return $data;
 	}
